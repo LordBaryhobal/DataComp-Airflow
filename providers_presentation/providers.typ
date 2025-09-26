@@ -14,6 +14,8 @@
   font: "Source Sans 3"
 )
 
+#show link: set text(fill: blue)
+
 #show: codly-init
 #codly(
   languages: codly-languages
@@ -44,7 +46,7 @@ Small components which communicate between each other
 - Operations
 - Notifications
 - Transfers
-- Secret backend
+- Secret backends
 - Logs
 - And more
 
@@ -269,4 +271,26 @@ A provider is defined as a Python package
 )
 
 4. Create a connection in the Web UI
+
+#align(
+  center + horizon,
+  image("new_connection.png", height: 80%)
+)
+
 5. Run the DAG
+
+#align(
+  center + horizon,
+  image("notification.png", height: 80%)
+)
+
+== References
+
+- Apache Airflow tutorial:\
+  https://airflow.apache.org/docs/apache-airflow-providers/howto/create-custom-providers.html
+
+- Astronomer example provider:\
+  https://github.com/astronomer/airflow-provider-sample
+
+- Minecraft RCON protocol:\
+  https://minecraft.wiki/w/RCON
